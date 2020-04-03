@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery.js"></script>
+</head>
+
+
+<body>
+
+    
+    <section id="container">
+        
+        <div class= "box-1">
+            <div><h1>Python Practice Questions</h1></div>
+            <div class="question">1.
+                Create a function that returns the sum of a list of numbers.
+                
+                On line 3, define a function called total that accepts one argument called numbers. 
+                It will be a list.
+            </div>
+            <div class= "answer-1">    
+              n = [3, 5, 7]</p>
+                <p>1.def total(numbers):</p>
+                      <p>result = 0</p>
+                      <p>for i in range(0,len(numbers)):</p>
+                        <p>result += numbers[i]</p>
+                      <p>return result</p>
+                    <p>print(total(n))</p>
+            </div>
+                    <button id="btn1">Answer</button>
+                    <p></p>
+            
+            <div class="question">2. Combine the two words together.
+                n = ["Michael", "Lieberman"]
+              Add your function here
+              </div>
+              <div class="answer-2">
+                <p>def join_strings(words):</p>
+                <p>result = ""</p>
+                <p>for i in words:</p>
+                  <p>result += i</p>
+                <p>return result</p>
+              <p>print (join_strings(n))</p>
+              </div>
+            <button id="btn2">Answer</button>
+            <p></p>
+            <div class="question">
+            
+                    <p>3.Commbine the the two lists together</p>
+                    n = [[1, 2, 3], [4, 5, 6, 7, 8, 9]]
+            </div>
+                <div class= "answer-3">
+                    <p>3.def flatten(lists):</p>
+                      <p>results = []</p>
+                     <p> for numbers in lists:</p>
+                        <p>for number in numbers:</p>
+                          <p>results.append(number)</p>
+                      <p>return results</p>
+                    <p>print (flatten(n))</p>
+
+                </div>
+                <button id="btn3">Answer</button>
+                <p></p>
+                <div class="question">
+                    4.
+                     If a number is divisible by two return even, if not print odd
+                </div>
+                <div class="answer-4">
+                    <p>def even_or_odd(num):</p>
+                    <p>if num % 2 ==0:</p>
+                       <p> return "Even"</p>
+                   <p> if num % 2 ==1:</p>
+                       <p> return "Odd"</p>
+                   <p> print(even_or_odd(3))</p>
+
+
+                </div>
+                <button id="btn4">Answer</button>
+                <p></p>
+                
+                <div class="question">
+                    5. Given a number, find its opposite
+                        1: -1
+                        -1:1  
+                </div>
+                <div class="answer-5">
+                    
+                    <p>def opposite(num):</p>
+                        <p>if num > 0:</p>
+                         <p> return num*-1</p>
+                        <p>elif num < 0: </p>
+                        <p>return  num * -1</p>
+                        <p>print(opposite(6))</p>
+ 
+                </div>
+                 <button id="btn5">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    6.
+                    Square the numbers and then add them together
+                    numbers = [1,2,3]
+                 </div>
+                 <div class="answer-6">
+                        <p>def square_sum(numbers):</p>
+                        <p>return sum( x**2 for x in numbers)</p>
+                        <P>print(square_sum(numbers))</P>
+                 </div>
+                  <button id="btn6">Answer</button>
+                  <p></p>
+                 
+                  <div class="question">
+                    7.Create a function that returns the sum of a list of numbers.
+
+                  </div>
+                  <div class="answer-7">
+                        <p>def number_sum(numbers):</p>
+                        <p>return sum (x for x in numbers)</p>
+                        <P>print(number_sum(numbers))</P>
+                  </div>
+                   <button id="btn7">Answer</button>
+                   <p></p>
+                  
+                   <div class="question">
+                    8.Your task is to create a function that does four basic mathematical operations.
+                    The function should take three arguments -
+                    operation(string/char), value1(number), value2(number).
+                    The function should return result of numbers after applying the chosen 
+                    operation.
+                   </div>
+                   <div class="answer-8">
+                        <p>def basic_operator(operator, value1, value2):</p>
+                        <p>if operator == "+":</p>
+                        <p>return value1 + value2</p>
+                        <p>elif operator == "-": </p>
+                        <p>return value1 - value2</p>
+                        <p>elif operator == "*":</p>
+                        <p>return value1* value2</p>
+                        <p>elif operator == "/":</p>
+                        <p>return value1 / value2</p>
+                        <p>print(basic_operator("*", 5, 6))</p>
+                   </div>
+                    <button id="btn8">Answer</button>
+                    <p></p>
+
+                <div class="question">
+                    9.
+                    Complete the function that accepts a string parameter,
+                    and reverses each word in the string. All spaces in the string 
+                    should be retained.
+
+                    str = "The quick brown fox jumps over the lazy dog."
+                </div>
+                <div class="answer-9">
+                        <p>def reverse_words(str):</p>
+                        <p>return ' '.join(s[::-1] for s in str.split(' '))</p>
+                        <p>print(reverse_words("The quick brown fox jumps over the lazy dog."))</p>
+                </div>
+                <button id="btn9">Answer</button>
+                <p></p>
+
+                <div class="question">
+                    10.
+                    Write a function to make upperCase--- apple
+                </div>
+                <div class="answer-10">
+                        <p>def upperCase(s):</p>
+                        <p>return s.upper()</p>
+                        <p>print(upperCase("apple"))</p>
+                </div>
+                 <button id="btn10">Answer</button>
+                 <p></p>
+
+                 <div class="question">
+                    11.
+                    write a function that says the greeting "hello world"
+                 </div>
+                 <div class="answer-11">
+                        <p>def greet():</p>
+                        <p>greet = "hello world"</p>
+                        <p>return greet</p>
+                        <p>print(greet())</p>
+                 </div>
+                  <button id="btn11">Answer</button>
+                  <p></p>
+
+                  <div class="question">
+                    12.
+                    Write function RemoveExclamationMarks which removes all 
+                    exclamation marks from a given string
+                    "Hello World!!!"
+                  </div>
+                <div class="answer-12">
+                        <p>def remove_exclamation_mark(s):</p>
+    
+                        <p>return s.replace("!", "")</p>
+                        <p>print(remove_exclamation_mark("hello! world!!!"))</p>
+                </div>
+                 <button id="btn12">Answer</button>
+                 <p></p>
+
+                 <div class="question">
+                    13.
+                    Return the number (count) of vowels in the given string
+                    inputStr= "abracadabra"
+                </div>
+                 <div class="answer-13">
+                        <p>def getCount(inputStr):</p>
+                        <p>numvowels=0</p>
+                        <p>for i in inputStr:</p>
+                        <p>if(i == 'a' or i == 'e' or i == 'i' or i == 'o' or i == 'u'):</p>
+                        <p>numvowels = numvowels + 1</p>
+                        <p>return numvowels</p>
+                        <p>print(getCount("abracadabra"))</p>
+                 </div>
+                 <button id="btn13">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    14.
+                    Who remembers back to their time in the schoolyard, when girls 
+                    would take a flower and tear its petals, saying each of the 
+                    following phrases each time a petal was torn:
+                    
+                    I love you
+                    a little
+                    a lot
+                    passionately
+                    madly
+                    not at all
+                    When the last petal was torn there were cries of excitement, dreams, 
+                    surging thoughts and emotions.
+                    
+                    Your goal in this kata is to determine which phrase the girls would say for a 
+                    flower of a given number
+                    
+                 </div>
+                 <div class="answer-14">
+                         <p> def how_much_i_love_you(nb_petals):</p>
+                        <p>n = nb_petals % 6</p>
+                         <p> if n == 1:</p>
+                         <p> return "I love you"</p>
+                        <p>if n == 2:</p>
+                         <p> return "a little"</p>
+                        <p>if n == 3:</p>
+                         <p> return "a lot"</p>
+                         <p> if n == 4: </p>
+                         <p> return "passionately"</p>
+                        <p>if n == 5:</p>
+                        <p>return "madly"</p>
+                         <p> if n == 0:</p>
+                        <p>return "not at all"</p>
+                        <p>print(how_much_i_love_you(6))</p>
+                 </div>
+                 <button id="btn14">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    15.
+                    Bob needs a fast way to calculate the volume of a cuboid with three values:
+                    length, width and the height of the cuboid.
+                    Write a function to help Bob with this calculation.
+                 </div>
+                 <div class="answer-15">
+                        <p>def getVolumeOfCubiod(length, width, height): </p>
+                         <p> volume = length * width * height</p>
+                        <p>return volume</p>
+                        <p>print(getVolumeOfCubiod(5,5,5))</p>
+                 </div>
+                 <button id="btn15">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    16.
+                    You are given two angles (in degrees) of a triangle.
+                    Write a function to return the 3rd.
+                    Note: only positive integers will be tested.
+                 </div>
+                 <div class="answer-16">
+                        <p>def other_angle(a, b):</p>
+                        <p>angle = 180 - (a + b)</p>
+                        <p>return angle</p>
+                        <p>print(other_angle(30, 70))</p>
+                 </div>
+                 <button id="btn16">Answer</button>
+                 <p></p>
+                
+
+                 <div class="question">
+                    17.
+                    When provided with a number between 0-9, return it in words.
+                    Input :: 1
+                    Output :: "One"
+                 </div>
+                 <div class="answer-17">
+                        <p>def switch_it_up(num):</p>
+                        <p>if num==0:</p>
+                        <p>return "zero"</p>
+                        <p>elif num== 1:</p>
+                         <p> return "one"</p>
+                        <p>elif num==2:</p>
+                         <p> return "two"</p>
+                        <p>elif num == 3:</p>
+                        <p>return "three"</p>
+                        <p>elif num == 4:</p>
+                        <p>return "four"</p>
+                        <p>elif num == 5:</p>
+                        <p>return "five"</p>
+                        <p>elif num == 6:</p>
+                        <p>return "six"</p>
+                        <p>elif num== 7:</p>
+                        <p>return "seven"</p>
+                         <p> elif num== 8:</p>
+                        <p>return "eight"</p>
+                        <p>elif num==9:</p>
+                         <p> return "nine"</p>
+                        <p>print(switch_it_up(9))</p>
+                 </div>
+                 <button id="btn17">Answer</button>
+                 <P></P>
+                
+                 <div class="question">
+                    18.
+                    Write function bmi that calculates body mass index (bmi = weight / height ^ 2).
+                   <p>if bmi <= 18.5 return "Underweight"</p>
+                   <p>if bmi <= 25.0 return "Normal"</p>
+                   <p>if bmi <= 30.0 return "Overweight"</p>
+                    <p> if bmi > 30 return "Obese </p>
+                 </div>
+                 <div class="answer-18">
+                   <p>bmi = weight / height**2</p>
+                    <p>if bmi <= 18.5: </p>
+                     <p> return "Underweight" </p>
+                   <p> elif bmi <= 25: </p>
+                   <p>return "normal"</p>
+                    <p>elif bmi <= 30:</p>
+                     <p> return "Overweight"</p>
+                   <p>elif bmi > 30:</p>
+                   <p>return "Obese"</p>
+                    <p> return bmi</p>
+                   <p>print(bmi(90, 1.8))</p>
+                 </div>
+                 <button id="btn18">Answer</button>
+                 <p></p>
+                
+
+                  <div class="question">
+                   19.Get the number n (n>0) to return the reversed sequence from n to 1.
+
+                    Example : n=5 >> [5,4,3,2,1]
+                    
+                  </div>
+                 <div class="answer-19">
+                    <p> def reverseseq(n): </p>
+                   <p>return list(range(n,0,- 1))</p>
+                   <p>print(reverseseq(5))</p>
+                 </div>
+                 <button id="btn19">Answer</button>
+                 <P></P>
+                
+                 <div class="question">
+                    20.
+                    Timmy & Sarah think they are in love, but around where they live, 
+                    they will only know once they pick a flower each. If one of the flowers
+                    has an even number of petals and the other has an odd number of petals 
+                    it means they are in love.
+                    
+                    Write a function that will take the number of petals of each flower 
+                    and return true if they are in love and false if they aren't.
+                 </div>
+                 <div class="answer-20">
+                    <p> def lovefunc( flower1, flower2 ):</p>
+                   <p>if (flower1 + flower2) % 2 == 1:</p> 
+                   <p>return True</p>
+                   <p>else:</p>
+                   <p>return False</p>
+                   <p>print(lovefunc(2, 20))</p>
+                 </div>
+                 <button id="btn20">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    21.
+                    Take a string and reverse it
+                 </div>
+                 <div class="answer-21">
+                   <p>def FirstReverse(str):</p> 
+
+                    
+                    <p> return str[::-1] </p>
+                      
+                   <p>print(FirstReverse("Joe"))</p>  
+                 </div>
+                 <button id="btn21">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    22.
+                    Print every second letter of 'watermelon'
+                    
+                 </div>
+                 <div class="answer-22">
+                    <p> def print_some_characters(word):</p>
+                   <p>for i in range(len(word)):</p>
+                   <p>if (i%2) -1==0:</p>
+                   <p>print(word[i])</p>
+                   <p>print(print_some_characters("watermelon"))</p>
+                 </div>
+                 <button id="btn22">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    23.  
+                    Print out every odd letter letter of 'watermelon'
+                 </div>
+                 <div class="answer-23">
+                   <p>def print_some_characters(word):</p>
+                   <p>for i  in range(len(word)):</p>
+                   <p>if i%2 == 0:</p>
+                   <p>print(word[i])</p>
+                   <p>print(print_some_characters("watermelon"))</p>
+                
+                    
+                
+                 </div>
+                 <button id="btn23">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    24. Pick a number, say 3, and add all the numbers upto it together
+                    1+2+3= 6
+                 </div>
+                 <div class="answer-24">
+                   <p>def simple_adding(num):</p>
+                   <p>return sum(range(1, num+1)</p>
+                   <p>print(simple_adding(3))</p>
+                 </div>
+                 <button id="btn24">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    25.
+                    Capitalize the first letter of each word in a sentence
+                     'you magnificent bastard'
+                 </div>
+                 <div class="answer-25">
+                    <p> def word_capitalize(str):</p>
+                   <p>return str.title()</p>
+                   <p>print(word_capitalize("you magnificent bastard"))</p>
+                 </div>
+                 <button id="btn25">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                   26.Print out every other letter in a word 'casablanca'
+                 </div>
+                 <div class="answer-26">
+                   <p>def every_other_letter(word):</p>
+                   <p>every_other = ""</p>
+                   <p>for i in range(0, len(word), 2):</p>
+                   <p>every_other += word[i]</p>
+                   <p>return every_other</p>
+                   <p>print(every_other_letter("casabalanca"))</p>
+                 </div>
+                 <button id="btn26">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    27.
+                    Take a word and reverse the order 'casablanca'
+                 </div>
+                 <div class="answer-27">
+                    def reverse_string(word):
+                    reverse = ""
+                    for i in range(len(word)-1, -1,  -1):
+                      reverse += word[i]
+                    return reverse
+                  print(reverse_string("casablanca"))
+                 </div>
+                 <button id="btn27">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    28.
+                    How many times a letter appears in a word 's' in mississippi
+                    
+                 </div>
+                 <div class="answer-28">
+                   <p>def count_char_x(word, x):</p>
+                   <p>occurrences = 0</p>
+                   <p>for letter in word:</p>
+                   <p>if letter == x:</p>
+                   <p>occurrences += 1</p>
+                   <p>return occurrences</p>
+                   <p>print(count_char_x("mississippi", "s"))</p>
+                 </div>
+                 <button id="btn28">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    29.
+                    if a word (Joe) has less then 20 characters add ! till it reaches 20 characters
+                    
+                 </div>
+                 <div class="answer-29">
+                   <p>def add_exclamation(word):</p>
+                    <p>while len(word) < 20: </p>
+                     <p> word += "!" </p>
+                    <p>return word</p>
+                    <p>print(add_exclamation("Joe"))</p>
+                 </div>
+                 <button id="btn29">Answer</button>
+                 <p></p>
+
+                 <div class="question">
+                    30.
+                    Write a function to multiply two numbers together
+                 </div>
+                 <div class="answer-30">
+                    <p>def multiply(a,b):</p>
+                    <p>multiplied = a*b</p>
+                    <p>return multiplied</p>
+                    <p>print(multiply(6,6))</p>
+                 </div>
+                 <button id="btn30">Answer</button>
+                 <p></p>
+                
+                 <div class="question">
+                    31.
+                    Return the first and last letter from the word 'robert'
+                 </div>
+                 <div class="answer-31">
+                    <p>def remove_char(s):</p>
+    
+                    <p>return s[0] + s[-1]</p>
+                    <p>print(remove_char('robert'))</p>
+                 </div>
+                 <button id="btn31">Answer</button>
+                 <p></p>
+
+                 <div class="question">
+                    32.
+                    Take all the numbers, square them and then add them together
+                    
+                    numbers = [0, 3, 4 ,5]
+                 </div>
+                 <div class="answer-32">
+                    
+                   <p> def square_sum(numbers):</p>
+                    <p>return sum(x ** 2 for x in numbers)</p>
+                    <p>print(square_sum(numbers))</p>
+                 </div>
+                 <button id="btn32">Answer</button>
+                 <p></p>
+            
+                 <div class="question">
+                    33.
+                    Take out all the white spaces from the string
+                    x= "8 j 8   mBliB8g  imjB8B8  jl  B"
+                   
+                </div>
+                <div class="answer-33">
+                    <p>def no_space(x):</p>
+                    <p>return x.replace(' ' ,'')</p>
+                     <p> print(no_space(x))</p>
+                </div>
+                 <button id="btn33">Answer</button>
+                 <p></p>
+
+                 <div class="question">
+                 34.
+                 Print out "You are welcome" 3 times
+                 </div>
+                 <div class="answer-34">
+                     <p> for i in range(3):</p>
+                    <p>print("You are welcome")</p>
+                 </div>
+                 <button id="btn34">Answer</button>
+                 <p></p>
+             
+                 <div class="question">
+                     35.
+                     Print out every number between 0 and 5  
+                 </div>
+                 <div class="answer-35">
+                     <p> for i in range(5):</p>
+                    <p>print(i)</p>
+                 </div>
+                 <button id="btn35">Answer</button>
+                 <p></p>      
+                 
+                 <div class="question">
+                    36.
+                    Animals = "catfrogdog"
+                    Print out cat, frog, dog separately from the string
+                </div>
+                <div class="answer-36">
+                    <p>dog = animals[3:6]</p>
+                    <p>cat = animals[:3]</p>
+                    <p>frog = animals[6:]</p>
+                    <p>print(dog)</p>
+                    <p>print(cat)</p>
+                    <p>print(frog)</p> 
+    </div>
+                <button id="btn36">Answer</button>
+                <p></p>
+            
+                <div class="question">
+                    37.
+                    animals=['ant', 'bat', 'cat']
+                    -Print out the index of 'bat'
+                    -add 'dog' to the list after 'ant'
+                    -find where 'cat' is
+                    - find where 'ant' is and replace it with 'mouse'
+                </div>
+                <div class="answer-37">
+                    <p>print(animals.index("bat"))</p>
+                    <p>#add dog after bat</p>
+                    <p>animals.insert(1, 'dog')</p>
+                    <p>print(animals)</p>
+                    <p># find where cat is</p>
+                    <p>animals.index('cat')</p>
+                    <p>print(animals.index('cat'))</p>
+                    <p># find where ant is and insert mouse at that spot</p>
+                    <p>ant_index = animals.index('ant')</p>
+                     <p> animals.insert(ant_index, "mouse")</p>
+                    <p>print(animals)</p>
+
+                    <p>1</p>
+                    <p>['ant', 'dog', 'bat', 'cat']</p>
+                    <p>3</p>
+                    <p>['mouse', 'ant', 'dog', 'bat', 'cat']</p>
+
+                </div>
+                <button id="btn37">Answer</button>
+                <p></p>   
+
+                <div class="question">
+                    38.
+                    multiply every number by 2 in the list
+                    my_list = [1, 3, 5, 7, 9]
+                </div>
+                <div class="answer-38">
+                    <p>my_list = [1, 3, 5, 7, 9]</p>
+                    <p>for number in my_list:</p>
+                    <p>print( number *2)</p>
+                </div>
+                <button id="btn38">Answer</button>
+                <p></p>
+
+                <div class="question">
+                    
+                    <p>39. Sort() in alphabetical order</p>
+                     <p> animals = ["cat", "dog", "bat", "mouse"]</p>
+                    
+                </div>
+                <div class="answer-39">
+                    <p>animals.sort()</p>
+                    <p>for animal in animals:</p>
+                    <p>print(animal)</p>
+                </div>
+                <button id="btn39">Answer</button>
+                <p></p>   
+
+                <div class="question">
+                    40.
+                Find how many numbers are less than 10 in the list
+                lotto = [4, 8, 15, 16, 23, 42]
+                    
+                </div>
+                <div class="answer-40">
+                    <p>def count_small(numbers):</p>
+                    <p>total = 0</p>
+                    <p>for n in numbers:</p>
+                        <p>if n < 10: </p>
+                        <p>total = total + 1</p>
+                        <p>return total</p>
+
+                        <p>lotto = [4, 8, 15, 16, 23, 42]</p>
+                        <p>small = count_small(lotto)</p>
+                        <p>print(small)</p>
+                </div>
+                <button id="btn40">Answer</button>
+                <p></p>
+
+                <div class="question">
+                    41.
+                write a function that prints out the even numbers from a list
+                Sample List : [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                </div>
+                <div class="answer-41">
+                        <p>def is_even_num(l):</p>
+                        <p>enum = []</p>
+                        <p>for n in l: </p>
+                        <p>if n % 2 == 0: </p>
+                        <p>enum.append(n)</p>
+                        <p>return enum</p>
+                        <p>print(is_even_num([1, 2, 3, 4, 5, 6, 7, 8, 9]))</p>
+                </div>
+                <button id="btn41">Answer</button>
+                <p></p>   
+                
+                <div class="question">
+                    42.
+                Create a function called every_three_nums that has one parameter named start.
+
+                The function should return a list of every third number between start and 100 (inclusive).
+                For example, every_three_nums(91) should return the list [91, 94, 97, 100
+
+                </div>
+                <div class="answer-42">
+                        <p>def every_three_nums(start): </p>
+                        <p>return list(range(start, 101, 3))</p>
+
+                        <p>print(every_three_nums(91))</p>
+                </div>
+                    <button id="btn42">Answer</button>
+                    <p></p>
+
+                    <div class="question">
+                        43.
+                        Write a function named larger_list that has two parameters named lst1 and lst2.
+                       
+                       The function should return the last element of the list that contains more elements. 
+                       If both lists are the same size, then return the last element of lst1.      
+                    </div>
+                    <div class="answer-43">
+                        <p>def larger_list(lst1, lst2): </p>
+                    <p>if len(lst1) >= len(lst2): </p>
+                    <p>return lst1[-1]</p>
+                    <p>else:</p>
+                    <p>return lst2[-1]</p>
+                      
+                    <p>print(larger_list([4, 10, 2, 5], [-10, 2, 5, 10]))</p>
+                    </div>
+                        <button id="btn43">Answer</button>
+                        <p></p>
+
+                        <div class="question">
+                            44.
+                         Write a function named combine_sort that has two parameters named lst1 and lst2.
+
+                         The function should combine these two lists into one new list and sort the result. Return the new sorted list.
+                        </div>
+                         <div class="answer-44">
+                    <p>def combine_sort(lst1, lst2): </p>
+                    <p>unsorted = lst1 + lst2</p>
+                    <p>sortedList = sorted(unsorted)</p>
+                    <p>return sortedList</p>  
+                    <p>#Uncomment the line below when your function is done</p>
+                    <p>print(combine_sort([4, 10, 2, 5], [-10, 2, 5, 10]))</p>
+
+
+                         </div>
+                            <button id="btn44">Answer</button>
+                            <p></p>
+        
+                        <div class="question">
+                            45.
+                         Create a function named divisible_by_ten() that takes a list of numbers named nums as a parameter.
+
+                         Return the count of how many numbers in the list are divisible by 10.
+                        [20, 25, 30, 35, 40]
+        
+                        </div>
+                        <div class="answer-45">
+                    <p>def divisible_by_ten(nums):</p>
+                    <p>count = 0</p>
+                    <p>for number in nums:</p>
+                    <p>if (number % 10 == 0):</p>
+                    <p>count += 1</p>
+                    <p>return count</p>
+
+                    <p>#Uncomment the line below when your function is done</p>
+                    <p>print(divisible_by_ten([20, 25, 30, 35, 40]))</p>
+
+
+                        </div>
+                        <button id="btn45">Answer</button>
+                        <p></p>   
+
+                        <p></p><div class="question">
+                            46.
+                            Create a function named add_greetings() which takes a list of strings named names as a parameter.
+                            
+                            In the function, create an empty list that will contain each greeting. Add the string "Hello, " in front of each name in names and append the greeting to the list.
+                            
+                            Return the new list containing the greetings.
+                            #Uncomment the line below when your function is done
+                            print(add_greetings(["Owen", "Max", "Sophie"]))
+                        </div>
+                        <div class="answer-46">
+                    <p>def add_greetings(names):</p>
+                    <p>new_list = []</p>
+                    <p>for name in names: </p>
+                    <p>new_list.append("Hello, " + name)</p>
+                    <p>return new_list</p>
+                    <p>print(add_greetings(["Owen", "Max", "Sophie"]))</p>
+
+
+
+                        </div>
+                        <button id="btn46">Answer</button>
+                        <p></p>
+                        <div class="question">
+                            47.
+                          Create a function named larger_sum() that takes two lists of numbers as parameters named lst1 and lst2.
+
+                          The function should return the list whose elements sum to the greater number. If the sum of the elements of each list are equal, return lst1
+                          [1, 9, 5], [2, 3, 7]))
+                            </div>
+                            <div class="answer-47">
+                                <p> def larger_sum(lst1, lst2):</p>
+                                <p>sum1 = 0</p>
+                                <p>sum2 = 0</p>
+                                <p>for number in lst1:</p>
+                                <p>sum1 += number</p>
+                                <p>for number in lst2:</p>
+                                <p>sum2 += number</p>
+                            <p>if sum1 >= sum2:</p>
+                            <p>return lst1</p>
+                            <p>else:</p> 
+                            <p>return lst2</p>
+
+                                
+                                    #Uncomment the line below when your function is done
+                                    print(larger_sum([1, 9, 5], [2, 3, 7]))
+                                </div>
+                                <button id="btn47">Answer</button>
+                                        <p></p>
+                                
+                               
+                                <div class="question">
+                                    48.
+                                  Write a function called unique_english_letters that takes the string word as a parameter. 
+                                  The function should return the total number of unique letters in the string.
+                                   Uppercase and lowercase letters should be counted as different letters.
+                                   We’ve given you a list of every uppercase and lower case letter in the English alphabet. 
+                                   It will be helpful to include that list in your function.
+                                   letters= "ABCDEFGHIJKLMNOPQRSTUVWXYZ" "abcdefghijklmnopqrstuvwxyz"
+                                </div>
+                                <div class="answer-48">
+                                        <p>def unique_english_letters(word):
+                                        <p>uniques = 0</p>
+                                        <p>for letter in letters:</p>
+                                        <p>if letter in word: </p>
+                                        <p>uniques += 1</p>
+                                    <p>return uniques</p>
+
+                                        <p># Uncomment these function calls to test your tip function:</p>
+                                        <p>print(unique_english_letters("mississippi"))</p>
+                                        <p># should print 4</p>
+                                        <p>print(unique_english_letters("Apple"))</p>
+                                        <p># should print 4</p>
+
+                                </div>
+                                <button id="btn48">Answer</button>
+                                <p></p>
+
+
+
+
+                        
+                        
+
+                        
+                        <div class="question">
+                            49.
+                            Create a function named same_name() that has two parameters named your_name and my_name.
+                            
+                            If our names are identical, return True. Otherwise, return False.
+                            1. 'Colby' 'Colby'
+                            2. 'Tina' 'Amber'
+
+                        </div>
+                        <div class="answer-49">
+                   <p>def same_name(your_name, my_name):</p>
+                   <p>if your_name == my_name:</p>
+                   <p>return True</p>
+                   <p>else:</p>
+                    <p> return False</p>
+
+                   <p># Uncomment these function calls to test your same_name function:</p>
+                   <p>print(same_name("Colby", "Colby"))</p>
+                   <p># should print True</p>
+                   <p>print(same_name("Tina", "Amber"))</p>
+                    <p> # should print False</p>
+                        </div>
+                        <button id="btn49">Answer</button>
+                        <p></p>
+                        
+                        <div class="question">
+                            50.
+                            Create a function called max_num() that has three parameters named num1, num2, and num3.
+                            
+                            The function should return the largest of these three numbers. If any of two numbers tie as the largest, you should return "It's a tie!".
+                            
+
+                        </div>
+                        <div class="answer-50">
+                   <p>def max_num(num1, num2, num3):</p>
+                            <p>if num1 > num2 and num1 > num3:</p>
+                                <p>return num1</p>
+                            <p>elif num2 > num1 and num2 > num3:</p>
+                                <p>return num2</p>
+                            <p>elif num3 > num1 and num3 > num2:</p>
+                               <p> return num3</p>
+                            <p>else:</p>
+                                <p>return "It's a tie!"</p>
+                            <p># Uncomment these function calls to test your max_num function:</p>
+                            <p>print(max_num(-10, 0, 10))</p>
+                            <p># should print 10</p>
+                            <p>print(max_num(-10, 5, -30))</p>
+                            <p># should print 5</p>
+                            <p>print(max_num(-5, -10, -10))</p>
+                        </div>
+                        <button id="btn50">Answer</button>
+                        <p></p>
+                        
+
+                
+                
+                 
+                
+                 
+                 
+
+                
+                
+                
+
+                 
+                
+                
+                    
+                        
+
+                        
+                        
+       '
+
+                        
+                        
+
+                        
+            
+            
+            
+            
+            
+            
+            </div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </section>
+    <script>
+        
+        $('.answer-1').hide();
+        $('#btn1').click(function(){
+            $('.answer-1').toggle();
+        });
+        $('.answer-2').hide();
+        $('#btn2').click(function(){
+            $('.answer-2').toggle();
+        });
+        $('.answer-3').hide();
+        $('#btn3').click(function(){
+            $('.answer-3').toggle();
+        });
+        $('.answer-4').hide();
+        $('#btn4').click(function(){
+            $('.answer-4').toggle();
+        });
+        $('.answer-5').hide();
+        $('#btn5').click(function(){
+            $('.answer-5').toggle();
+        });
+        $('.answer-6').hide();
+        $('#btn6').click(function(){
+            $('.answer-6').toggle();
+        });
+        $('.answer-7').hide();
+        $('#btn7').click(function(){
+            $('.answer-7').toggle();
+        });
+        $('.answer-8').hide();
+        $('#btn8').click(function(){
+            $('.answer-8').toggle();
+        });
+        $('.answer-9').hide();
+        $('#btn9').click(function(){
+            $('.answer-9').toggle();
+        });
+        $('.answer-10').hide();
+        $('#btn10').click(function(){
+            $('.answer-10').toggle();
+        });
+        $('.answer-11').hide();
+        $('#btn11').click(function(){
+            $('.answer-11').toggle();
+        });
+        $('.answer-12').hide();
+        $('#btn12').click(function(){
+            $('.answer-12').toggle();
+        });
+        $('.answer-13').hide();
+        $('#btn13').click(function(){
+            $('.answer-13').toggle();
+        });
+        $('.answer-14').hide();
+        $('#btn14').click(function(){
+            $('.answer-14').toggle();
+        });
+        $('.answer-15').hide();
+        $('#btn15').click(function(){
+            $('.answer-15').toggle();
+        });
+        $('.answer-16').hide();
+        $('#btn16').click(function(){
+            $('.answer-16').toggle();
+        });
+        
+        $('.answer-17').hide();
+        $('#btn17').click(function(){
+            $('.answer-17').toggle();
+        });
+        $('.answer-18').hide();
+        $('#btn18').click(function(){
+            $('.answer-18').toggle();
+        });
+        $('.answer-19').hide();
+        $('#btn19').click(function(){
+            $('.answer-19').toggle();
+        });
+        $('.answer-20').hide();
+        $('#btn20').click(function(){
+            $('.answer-20').toggle();
+        });
+        $('.answer-21').hide();
+        $('#btn21').click(function(){
+            $('.answer-21').toggle();
+        });
+        $('.answer-22').hide();
+        $('#btn22').click(function(){
+            $('.answer-22').toggle();
+        });
+        $('.answer-23').hide();
+        $('#btn23').click(function(){
+            $('.answer-23').toggle();
+        });
+        $('.answer-24').hide();
+        $('#btn24').click(function(){
+            $('.answer-24').toggle();
+        });
+        
+        $('.answer-25').hide();
+        $('#btn25').click(function(){
+            $('.answer-25').toggle();
+        });
+        $('.answer-26').hide();
+        $('#btn26').click(function(){
+            $('.answer-26').toggle();
+        }); 
+        $('.answer-27').hide();
+        $('#btn27').click(function(){
+            $('.answer-27').toggle();
+        });
+        $('.answer-28').hide();
+        $('#btn28').click(function(){
+            $('.answer-28').toggle();
+        });
+        $('.answer-29').hide();
+        $('#btn29').click(function(){
+            $('.answer-29').toggle();
+        });
+        $('.answer-30').hide();
+        $('#btn30').click(function(){
+            $('.answer-30').toggle();
+        });
+        $('.answer-31').hide();
+        $('#btn31').click(function(){
+            $('.answer-31').toggle();
+        });
+        $('.answer-32').hide();
+        $('#btn32').click(function(){
+            $('.answer-32').toggle();
+        });
+        $('.answer-33').hide();
+        $('#btn33').click(function(){
+            $('.answer-33').toggle();
+        });
+        $('.answer-34').hide();
+        $('#btn34').click(function(){
+            $('.answer-34').toggle();
+        });
+        $('.answer-35').hide();
+        $('#btn35').click(function(){
+            $('.answer-35').toggle();
+        });
+        
+        $('.answer-36').hide();
+        $('#btn36').click(function(){
+            $('.answer-36').toggle();
+        });
+        $('.answer-37').hide();
+        $('#btn37').click(function(){
+            $('.answer-37').toggle();
+        });
+        $('.answer-38').hide();
+        $('#btn38').click(function(){
+            $('.answer-38').toggle();
+        });
+        $('.answer-39').hide();
+        $('#btn39').click(function(){
+            $('.answer-39').toggle();
+        });
+        $('.answer-40').hide();
+        $('#btn40').click(function(){
+            $('.answer-40').toggle();
+        });
+        $('.answer-41').hide();
+        $('#btn41').click(function(){
+            $('.answer-41').toggle();
+        });
+        $('.answer-42').hide();
+        $('#btn42').click(function(){
+            $('.answer-42').toggle();
+        });
+        $('.answer-43').hide();
+        $('#btn43').click(function(){
+            $('.answer-43').toggle();
+        });
+        $('.answer-44').hide();
+        $('#btn44').click(function(){
+            $('.answer-44').toggle();
+        });
+        $('.answer-45').hide();
+        $('#btn45').click(function(){
+            $('.answer-45').toggle();
+        });
+        $('.answer-46').hide();
+        $('#btn46').click(function(){
+            $('.answer-46').toggle();
+        });
+        
+        $('.answer-47').hide();
+        $('#btn47').click(function(){
+            $('.answer-47').toggle();
+        });
+        $('.answer-48').hide();
+        $('#btn48').click(function(){
+            $('.answer-48').toggle();
+        });
+        $('.answer-49').hide();
+        $('#btn49').click(function(){
+            $('.answer-49').toggle();
+        });
+        $('.answer-50').hide();
+        $('#btn50').click(function(){
+            $('.answer-50').toggle();
+        });
+    
+    
+    
+    
+    </script>
+    
+</body>
+</html>
